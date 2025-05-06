@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Project</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a5c2e5dba3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
@@ -37,11 +38,120 @@
            <h1 class="subtitle">About Me</h1>
            <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, error adipisci sequi vero voluptates enim fuga accusamus debitis deserunt maxime officiis exercitationem mollitia magnam harum aperiam! Eos magnam sunt odio!</p>
            <div class="tab-titles">
-            
+            <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('education')">Education</p>
            </div>
+           <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
+                <li><span>Web Development</span><br>Web App Development</li>
+                <li><span>App Development</span><br>Building App Development</li>
+            </ul>
+        </div>
+       
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>2017-2019</span><br>Pentagon International College</li>
+                <li><span>2020-2024</span><br>Swami Vivekanad Institute Of <br>Engineering And Technology <br>(SVIET)</li>
+            </ul>
+        </div>
             </div>
+            
         </div>
     </div>
     </div>
+    <!-- Services -->
+     <div class="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+         <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod omnis ad exercitationem ullam laudantium. Odio saepe repellat maxime, excepturi sapiente itaque et ipsum aut culpa minima, rerum possimus? Veniam, dolor!</p>
+            <a href="#">Learn More</a>
+         </div>
+
+         <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod omnis ad exercitationem ullam laudantium. Odio saepe repellat maxime, excepturi sapiente itaque et ipsum aut culpa minima, rerum possimus? Veniam, dolor!</p>
+            <a href="#">Learn More</a>
+         </div>
+
+         <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod omnis ad exercitationem ullam laudantium. Odio saepe repellat maxime, excepturi sapiente itaque et ipsum aut culpa minima, rerum possimus? Veniam, dolor!</p>
+            <a href="#">Learn More</a>
+         </div>
+
+            </div>
+        </div>
+     </div>
+     <!-- Portfolio -->
+      <div class="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="../Portfolio/assets/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>This Helps You Connect To The People Around You</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../Portfolio/assets/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>This Helps You Connect To The People Around You</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../Portfolio/assets/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>This Helps You Connect To The People Around You</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+      <!-- Contact Form -->
+       <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+             <h1>Contact Me</h1>
+             <p><i class="fa-solid fa-envelope"></i>ujjwalmishra272@gmail.com</p>
+             <p><i class="fa-solid fa-phone"></i>9860579234</p>
+             <div class="social-icons">
+                <a href="https://www.facebook.com/ujjwal.mishra.933625/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/just_devils_world/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ujjwal-mishra-20a2301b1/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-threads"></i></a>
+             </div>
+             <a href="../Portfolio/assets/ujjwal_resume.pdf" download class="btndow">Download CV</a>
+                </div>
+                <div class="right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Enter Your Email">
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2 btndow">Submit</button>
+                </form>
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="copyright">
+        CopyRight  Created With <i class="fa-solid fa-heart"></i>  By : Ujjwal Mishra
+       </div>
+    <script src="script.js"></script>
 </body>
 </html>
